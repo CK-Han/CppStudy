@@ -36,6 +36,12 @@
     <ClCompile Include="..\Common\Util\stream.cpp">
       <Filter>Common\Util</Filter>
     </ClCompile>
+    <ClCompile Include="Socket.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Common\Protocol\Define.h">
@@ -52,6 +58,12 @@
     </ClInclude>
     <ClInclude Include="..\Common\Protocol\Errno.h">
       <Filter>Common\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -328,6 +328,9 @@ namespace NetLib
 		session.Clear();
 		--connectedSessionCount;
 		ReleaseSessionSerial(sessionSerial);
+
+		// TODO 세션 close process 전에 다시 그 세션이 사용된다면(이미 reelaseSessionSerial했으니...) 문제가 발생할것이다.
+		AddPacketQueue(sessionSerial, Packet_SessionClose::typeAdder.GetType(), 0, nullptr);
 	}
 
 	bool SelectServer::IsValidSerial(SERIAL_TYPE serial)

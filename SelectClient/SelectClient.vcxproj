@@ -85,6 +85,9 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -118,7 +121,9 @@
     <ClCompile Include="..\Common\Protocol\PacketBase.cpp" />
     <ClCompile Include="..\Common\Protocol\protocol.cpp" />
     <ClCompile Include="..\Common\Util\stream.cpp" />
+    <ClCompile Include="Framework.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Socket.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Common\Protocol\Define.h" />
@@ -126,6 +131,8 @@
     <ClInclude Include="..\Common\Protocol\PacketBase.h" />
     <ClInclude Include="..\Common\Protocol\protocol.h" />
     <ClInclude Include="..\Common\Util\stream.h" />
+    <ClInclude Include="Framework.h" />
+    <ClInclude Include="Socket.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
